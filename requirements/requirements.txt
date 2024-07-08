@@ -1,0 +1,16 @@
+ipykernel
+matplotlib
+# tensorflow
+tensorflow-metal
+tensorflow_datasets
+keras==3.0.2
+keras_cv
+scipy
+diffusers
+ftfy
+accelerate
+transformers
+torchvision
+imageio
+ipywidgets
+jupyter_bbox_widget
