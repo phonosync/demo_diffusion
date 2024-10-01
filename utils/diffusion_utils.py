@@ -25,8 +25,8 @@ text2ImgPipeline = StableDiffusionPipeline.from_pretrained(model_id).to(device)
 img2ImgPipeline = StableDiffusionImg2ImgPipeline.from_pipe(text2ImgPipeline).to(device)
 inpaintPipeline = StableDiffusionInpaintPipeline.from_pipe(text2ImgPipeline).to(device)
 
-def randomImage(num_inference_steps=20):
-    return text2image(num_inference_steps=num_inference_steps, seed=0)
+def randomImage(num_inference_steps=20,seed=42):
+    return text2image(num_inference_steps=num_inference_steps, seed=seed)
 
 def text2image(prompt="",
                negative_prompt="Oversaturated, blurry, low quality",
